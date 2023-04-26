@@ -29,3 +29,12 @@ main{
 }
   
 body{background-color: rgb(216, 36, 26);}
+
+@media (max-width: 767px) {
+    .col-sm-1 {
+      text-align: center;
+    }
+    .col-sm-1 img {
+      max-width: 100%;
+    }
+  }
