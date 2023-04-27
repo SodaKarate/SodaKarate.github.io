@@ -1,40 +1,40 @@
-a{
-    text-decoration: underline;
-    color:black;
-}
-
-a:hover{
-    color:red;
-}
-
-img{
-    max-width: fit-content;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-main{
-    padding-top: 20vh;
-}
-
-.rounded-box {
-    margin-top: 20vh;
-    border-radius: 10px;
+.white-box {
+    background-color: white;
     padding: 20px;
-    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-  
-body{background-color: rgb(216, 36, 26);}
 
-@media (max-width: 767px) {
-    .col-sm-1 {
-      text-align: center;
-    }
-    .col-sm-1 img {
-      max-width: 100%;
-    }
-  }
+header {
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+.szep-box {
+    margin-top: 10em;
+    background-color: azure;
+    padding: 5em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px;
+    align-items: center;
+}
+
+.kisdoboz {
+    margin-top: 5em;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 3px 5px 4px 6px;
+    padding: 10px;
+}
+
+.nelegyentulnagy {
+    max-width: 10em;
+    max-height: 10em;
+}
