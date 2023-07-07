@@ -18,3 +18,12 @@ h1 {
 .row {
     margin-top: 10vh;
 }
+
+img {
+    border-radius: 5px;
+}
+
+.tagfix {
+    padding-left: 100px;
+    padding-top: 35px;
+}
