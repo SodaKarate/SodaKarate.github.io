@@ -63,3 +63,59 @@ main {
     height: 100px;
     width: 100px;
 }
+
+.mid-img{
+    height: 200px;
+    width: 200px;
+}
+
+.hely{
+    padding: 60px;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+  }
+
+  .tile {
+    flex: 0 0 calc(33.33% - 30px);
+    margin: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tile:hover {
+    transform: scale(1.05);
+  }
+
+  .tile:nth-child(2) {
+    margin: auto;
+    order: 2;
+  }
+
+  .mid{
+    justify-content: center;
+  }
+
+  .revolut{
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+div a :hover{
+    text-decoration: none;
+}
+
+.kicsi{
+    font-size: small;
+}
