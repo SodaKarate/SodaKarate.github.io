@@ -10,7 +10,7 @@ header {
 }
 
 nav {
-    background-color: #3B5998;
+    background-color: #4267B2;
     display: flex;
     justify-content: center;
 }
@@ -23,7 +23,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4C69BA;
+    background-color: #264279;
+    color: white;
+    text-decoration: none;
 }
 
 .profile-image {
