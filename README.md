@@ -1,1 +1,0 @@
-#Idk csak weblapszerkeztest gyakorlok
