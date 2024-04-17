@@ -36,3 +36,7 @@ function draw() {
 
 
 setInterval(draw, 33);
+
+window.addEventListener('resize', function() {
+    location.reload();
+});
