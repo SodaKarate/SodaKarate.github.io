@@ -1,24 +1,22 @@
 var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d');
 
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-
 var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrsuvwxyz1234567890';
 letters = letters.split('');
 
-
 var fontSize = 10,
-    columns = canvas.width / fontSize;
-
+    columns;
 
 var drops = [];
-for (var i = 0; i < columns; i++) {
-  drops[i] = 1;
-}
 
+function setCanvasSize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  columns = canvas.width / fontSize;
+  for (var i = 0; i < columns; i++) {
+    drops[i] = drops[i] || 1;
+  }
+}
 
 function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, .1)';
@@ -34,9 +32,7 @@ function draw() {
   }
 }
 
-
+setCanvasSize();
 setInterval(draw, 33);
 
-window.addEventListener('resize', function() {
-    location.reload();
-});
+window.addEventListener('resize', setCanvasSize);
