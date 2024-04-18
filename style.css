@@ -1,0 +1,78 @@
+#floating-container {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 75%;
+    background-color: black;
+    z-index: 2;
+}
+canvas {
+    position: relative;
+    z-index: 1;
+}
+
+#kozep-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00540d;
+}
+
+h1{
+    font-size: 500%;
+}
+h2{
+    font-size: 200%;
+}
+
+.kiskep{
+    width: 5%;
+    height: auto;
+}
+
+.insta{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.insta-text{
+    font-size: 200%;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: #00540d;
+}
+
+.fb{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+}
+
+.fb-text{
+    font-size: 200%;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    color: #00540d;
+}
+
+.revolut{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.revolut-text{
+    font-size: 200%;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    color: #00540d;
+}
+
+a{
+    color: #00540d;
+}
