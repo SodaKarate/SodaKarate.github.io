@@ -33,7 +33,7 @@ main.appendChild(quizContainer);
 
 kerdes('1: What country is Cocks located in?',['UK','Ireland','Scotland','Northern Ireland'], 0)
 kerdes('2: What currency do they use in Cocks?',['US Dollars','Punds','Pounds'], 2)
-kerdes('3: What is the name of the local Inn?',['Cock Inn','The Cock In','The Cock Inn'], 0)
+kerdes('3: What is the name of the local Inn?',['Cock Inn','The Cock In','The Cock Inn'], 2)
 kerdes('4: What is the name of the main road in Cocks?',['The Cocks Road','Cocks Hill','Main Street'], 1)
 kerdes('5: How people should drive through Cocks?',['Fast','Nice','Slow','Careful'], 3)
 kerdes('6: On what side should you drive in Cocks?',['Left','Right','Road is road (middle)'], 0)
