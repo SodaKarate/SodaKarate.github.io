@@ -18,9 +18,11 @@ function kerdes(szoveg, valaszok, helyes){
         button.addEventListener('click', () => {
             if (index === helyes) {
                 counter += 1;
-                vegeredmeny.textContent = `Correct answers: ${counter}`;
+                //vegeredmeny.textContent = `Correct answers: ${counter}`;
             }
             quizContainer.removeChild(questionContainer);
+            if (quizContainer.childElementCount === 0) {
+                vegeredmeny.textContent = `Correct answers: ${counter}`;}
         });
         questionContainer.appendChild(button);
     });
