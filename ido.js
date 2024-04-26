@@ -27,7 +27,7 @@ for(let i = 0; i < szovegek.length; i++){
 function most(){
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
-const currentMonth = currentDate.getMonth();
+const currentMonth = currentDate.getMonth()+1;
 const currentDay = currentDate.getDate();
 const currentHour = currentDate.getHours();
 const currentMinute = currentDate.getMinutes();
