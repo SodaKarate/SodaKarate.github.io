@@ -27,50 +27,128 @@ h2{
     font-size: 200%;
 }
 
-.kiskep{
-    width: 5%;
-    height: auto;
+@media screen and (max-width: 1900px) {
+    .kiskep {
+        width: 5%;
+        top: 30;
+    }
+    .kiskep{
+        width: 20%;
+        height: auto;
+    }
+    
+    .insta{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    .insta-text{
+        font-size: 200%;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    .fb{
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+    
+    .fb-text{
+        font-size: 200%;
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    .revolut{
+        position: absolute;
+        top: 70%;
+        left: 5%;
+    }
+    
+    .revolut-text{
+        font-size: 200%;
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    #floating-container {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 75%;
+        background-color: black;
+        z-index: 2;
+    }
 }
 
-.insta{
-    position: absolute;
-    top: 40%;
-    left: 25%;
-}
-.insta-text{
-    font-size: 200%;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    color: #00540d;
-}
-
-.fb{
-    position: absolute;
-    top: 55%;
-    left: 25%;
-}
-
-.fb-text{
-    font-size: 200%;
-    position: absolute;
-    top: 55%;
-    left: 30%;
-    color: #00540d;
-}
-
-.revolut{
-    position: absolute;
-    top: 70%;
-    left: 25%;
-}
-
-.revolut-text{
-    font-size: 200%;
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    color: #00540d;
+@media screen and (max-width: 600px) {
+    .kiskep {
+        width: 20%; /* Increase the size of the icons */
+        top: 30;
+    }
+    .kiskep{
+        width: 20%;
+        height: auto;
+    }
+    
+    .insta{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    .insta-text{
+        font-size: 200%;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    .fb{
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+    
+    .fb-text{
+        font-size: 200%;
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    .revolut{
+        position: absolute;
+        top: 70%;
+        left: 5%;
+    }
+    
+    .revolut-text{
+        font-size: 200%;
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        color: #00540d;
+    }
+    
+    #floating-container {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 75%;
+        background-color: black;
+        z-index: 2;
+    }
 }
 
 a{
