@@ -34,11 +34,20 @@ percszoveg.innerText = currentDate.getMinutes();
 masodpercszoveg.innerText =  currentDate.getSeconds();
 milliszoveg.innerText = currentDate.getMilliseconds();
 
+if(oraszoveg.innerText==11 && percszoveg.innerText==11){    
+    oraszoveg.style.color = "red";
+    percszoveg.style.color = "red";
+}
+else{
+    oraszoveg.style.color = "white";
+    percszoveg.style.color = "white";
 }
 
+}
 most();
 
 setInterval(most, 1000/60);
+
 
 for(let i = 0; i < szovegek.length; i++){
     body.appendChild(szovegek[i]);
