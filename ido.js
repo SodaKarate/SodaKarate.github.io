@@ -38,7 +38,7 @@ if(oraszoveg.innerText==11 && percszoveg.innerText==11){
     oraszoveg.style.color = "red";
     percszoveg.style.color = "red";
 }
-else{
+else{''
     oraszoveg.style.color = "white";
     percszoveg.style.color = "white";
 }
