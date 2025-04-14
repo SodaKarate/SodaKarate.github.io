@@ -31,6 +31,22 @@ mainkerdes.style.margin = "10px 0";
 mainkerdes.style.maxWidth = "100%";
 mainkerdes.style.wordWrap = "break-word";
 
+const dayCounter = document.createElement("div");
+const startDate = new Date(2025, 2, 18);
+const currentDate = new Date();
+const diffTime = Math.abs(currentDate - startDate);
+const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+dayCounter.innerHTML = `${diffDays} napja érvényben`;
+dayCounter.style.color = "white";
+dayCounter.style.fontSize = "3.5vw";
+dayCounter.style.fontWeight = "bold";
+dayCounter.style.margin = "20px 0 10px 0";
+dayCounter.style.padding = "10px";
+dayCounter.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+dayCounter.style.borderRadius = "8px";
+dayCounter.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+
 const donationBtn = document.createElement("button");
 donationBtn.innerHTML = "Vegyél nekem egy kávét!";
 donationBtn.style.padding = "12px 24px";
@@ -38,7 +54,7 @@ donationBtn.style.backgroundColor = "white";
 donationBtn.style.color = "rgb(153, 0, 255)";
 donationBtn.style.border = "none";
 donationBtn.style.borderRadius = "4px";
-donationBtn.style.fontSize = "1.2rem";
+donationBtn.style.fontSize = "0.8rem";
 donationBtn.style.fontWeight = "bold";
 donationBtn.style.cursor = "pointer";
 donationBtn.style.marginTop = "20px";
@@ -84,5 +100,6 @@ body.appendChild(modal);
 
 maintile.appendChild(mainkerdes);
 maintile.appendChild(mainszoveg);
+maintile.appendChild(dayCounter);
 maintile.appendChild(donationBtn);
 body.appendChild(maintile);
